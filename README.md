@@ -70,14 +70,12 @@ Without arguments, each script runs its whole design and overwrites its CSV file
 | Table II | `make_tables.py` | `exp5_attack.csv` |
 | Table III | `make_tables.py` | `exp3_overhead.csv` |
 | Table IV | `make_tables.py` | `exp6_case_study.csv` |
-| Section V-I | — | `exp6_scenarios.csv` (scenario validation) |
+| Section V-I | — | `exp6_scenarios.csv` |
 | Section IV-D | `verify_claims.py` | `verify_claims.csv` |
 | Figure 1 | `make_figures.py` | `exp1_main.csv` |
 | Figure 2 | `make_figures.py` | `exp1_main.csv` |
 | Figure 3 | `make_figures.py` | `exp4_baselines.csv` |
 | Figure 4 | `make_figures.py` | `exp2_talpha.csv`, `exp2_phi.csv` |
-
-`make_tables.py` also writes `results/text_numbers.txt`, which lists every quantity quoted in the prose of Section V together with the file it comes from.
 
 Section IV-D, Proposition 1 and the transcription check of Section V-I are covered by `verify_claims.py`, which writes `results/verify_claims.csv`.
 
@@ -85,7 +83,7 @@ Section IV-D, Proposition 1 and the transcription check of Section V-I are cover
 
 - 18 synthetic models, with the number of concepts assigned systematically over the range 5 to 20, so model size is not confounded with model identity.
 - Each model is driven by 100 initial conditions.
-- Horizon: `T = 20`
+- Number of qFCM iterations (reasoning steps): `T = 20`
 - Nonlinearity coefficient: `phi = 0.8` outside Section V-D
 - L-BFGS-B budget: 1,000 iterations
 - Seeds are fixed, so a rerun reproduces every CSV to the stored precision.
