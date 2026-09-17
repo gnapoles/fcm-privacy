@@ -1,0 +1,15 @@
+claim,activation,detail,value
+gradient,sigmoid,frobenius,2.916e-08
+gradient,sigmoid,nuclear,2.290e-08
+gradient,sigmoid,spectral,2.631e-08
+gradient,tanh,frobenius,5.576e-08
+gradient,tanh,nuclear,5.437e-08
+gradient,tanh,spectral,5.146e-08
+proposition1,sigmoid,N=5,2.410e-15
+proposition1,sigmoid,N=10,6.561e-15
+proposition1,sigmoid,N=20,2.992e-14
+proposition1,tanh,N=5,1.621e-15
+proposition1,tanh,N=10,6.428e-15
+proposition1,tanh,N=20,9.503e-14
+transcription,-,max centrality error,1.000e-03
+transcription,-,causal links,99
